@@ -16,6 +16,16 @@ const data = [
   { Kod: "999", Adi: "Bağımsıza", Oy: 450045 }
 ];
 
+document.onreadystatechange = function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const param = urlParams.get("isim");
+  if (param) {
+    console.log(param);
+    const input = document.getElementById("name");
+    input.value = param;
+    find();
+  }
+};
 function find() {
   const input = document.getElementById("name");
   const toplamSecmen = data.reduce(
@@ -48,7 +58,7 @@ function find() {
     input.value +
     "</b> adlı kişi oyunu <b>" +
     oynalanParti.Adi +
-    "</b> vermiştir.";
+    "</b> vermiştir.*";
   return;
 }
 
