@@ -1,0 +1,40 @@
+body {
+  color: rgb(232, 234, 237);
+  background: rgb(50, 54, 57);
+}
+.sandik {
+  width: 100px;
+}
+.sonuc {
+  font-size: 3em;
+  min-height: 3em;
+  text-align: center;
+}
+.show {
+  margin-top: 24px;
+  min-width: 200px;
+}
+.top {
+  margin-top: 24px;
+}
+.center {
+  text-align: center;
+}
+.input {
+  width: 100%;
+  max-width: 600px;
+  font-size: 3em;
+  text-align: center;
+}
+.root {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 64px;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+.dipnot {
+  max-width: 600px;
+  color: gray;
+}
