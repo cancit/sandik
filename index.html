@@ -8,17 +8,26 @@
     <script src="main.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-    <style>
-    
-    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138152324-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138152324-1');
+    </script>
+
   </head>
   <body>
     <div class="root">
     <img class="sandik" src="ballot.png" />
     <h1>Seçmenmatik</h1>
-    <h2 class="top center">Kime oy verdiğini görmek istediğiniz kişinin <br/> adını soyadını yazınız.</h1>
-    <h4 class="top">Ad Soyad</h4>
-    <input  class="input" id="name" />
+    <h2 class="top center">31 Mart 2019 Yerel Seçimi</h1>
+
+    <h3 class="top center">Kime oy verdiğini  görmek istediğiniz<br/> kişinin adını soyadını yazınız.</h3>
+    
+    <input  class="input top" id="name" />
     <button type="button" class="btn btn-primary show" onclick="javascript:find();">Göster</button>
     <h3 class="top sonuc" class id="sonuc"></h3>
 
