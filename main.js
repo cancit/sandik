@@ -20,12 +20,10 @@ document.addEventListener("DOMContentLoaded", function() {
   const urlParams = new URLSearchParams(window.location.search);
   const param = urlParams.get("isim");
   if (param) {
-    console.log(param);
     const input = document.getElementById("name");
     input.value = param;
     find();
     input.addEventListener("keyup", function(event) {
-      console.log(event);
       if (event.key === "Enter") {
         find();
       }
@@ -44,11 +42,7 @@ function find() {
       "Lütfen gerçek bir ad soyad giriniz";
     return;
   }
-  window.history.pushState(
-    { title: "" },
-    "",
-    window.location.host + "?isim=" + input.value
-  );
+  window.history.pushState({ title: "" }, "", "?isim=" + input.value);
 
   // yazı'yı hash'leyip sayıya çevirip toplam oy sayısına göre mod'unu alalım
   let code = parseInt(input.value.hashCode() % toplamSecmen);
