@@ -6,38 +6,94 @@
     <title>Seçmenmatik</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="main.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138152324-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-138152324-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'UA-138152324-1');
+      gtag("config", "UA-138152324-1");
     </script>
-
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=110919075755553&autoLogAppEvents=1"
+    ></script>
     <div class="root">
-    <img class="sandik" src="ballot.png" />
-    <h1>Seçmenmatik</h1>
-    <h2 class="top center">31 Mart 2019 Yerel Seçimi</h1>
+      <img class="sandik" src="ballot.png" />
+      <h1>Seçmenmatik</h1>
+      <h2 class="top center">31 Mart 2019 Yerel Seçimi</h2>
 
-    <h3 class="top center">Kime oy verdiğini  görmek istediğiniz<br/> kişinin adını soyadını yazınız.</h3>
-    
-    <input  class="input top" id="name" />
-    <button type="button" class="btn btn-primary show" onclick="javascript:find();">Göster</button>
-    <h3 class="top sonuc" class id="sonuc"></h3>
+      <h3 class="top center">
+        Kime oy verdiğini görmek istediğiniz<br />
+        kişinin adını soyadını yazınız.
+      </h3>
 
-    <p class="dipnot">* Bu web uygulamasının algoritması <b>Profesör Dr. John Cheat</b>'in
-    <b>Massachusetts Institute of Technology</b>'deki çalışmaları sonucunda çıkardığı
-       2018 Kasım ayında yayınlanan makalesi üzerinden yazılmıştır.Bunun dışında Machine Learning,
-       Artifical Intelligence ve Deep Learning teknolojileri kullanılmış olup sistem Blockchain üzerinden Docker ve
-       Kubernetes kullanılarak Serverless'ta Gluten-Free kodlama tekniği ile geliştirilmiştir. Geliştirirken hiçbir
-       hayvana zarar verilmemiştir. Bilgisayar hatasından dolayı sonuçlarda hata payı olabilir, 
-       algoritmanın gizliliği gereği bu oranın tüm hakları saklıdır.<a href="main.js"> Kaynak Kodu</a> </p>
-  </div>
+      <input class="input top" id="name" />
+      <button
+        type="button"
+        class="btn btn-primary show"
+        onclick="javascript:find();"
+      >
+        Göster
+      </button>
+      <h3 class="top sonuc" class id="sonuc"></h3>
+      <div class="social">
+        <div class="fb-share-button">
+          <div
+            class="fb-share-button f-share-button"
+            data-href="https://cancit.github.io/sandik/"
+            data-layout="button"
+            data-size="small"
+          >
+            <a
+              target="_blank"
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcancit.github.io%2Fsandik%2F&amp;src=sdkpreparse"
+              class="fb-xfbml-parse-ignore"
+              >Share</a
+            >
+          </div>
+        </div>
+        <a
+          href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+          class="twitter-share-button"
+          data-show-count="false"
+          >Tweet</a
+        ><script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+      <p class="dipnot">
+        * Bu web uygulamasının algoritması <b>Profesör Dr. John Cheat</b>'in
+        <b>Massachusetts Institute of Technology</b>'deki çalışmaları sonucunda
+        çıkardığı 2018 Kasım ayında yayınlanan makalesi üzerinden
+        yazılmıştır.Bunun dışında Machine Learning, Artifical Intelligence ve
+        Deep Learning teknolojileri kullanılmış olup sistem Blockchain üzerinden
+        Docker ve Kubernetes kullanılarak Serverless'ta Gluten-Free kodlama
+        tekniği ile geliştirilmiştir. Geliştirirken hiçbir hayvana zarar
+        verilmemiştir. Bilgisayar hatasından dolayı sonuçlarda hata payı
+        olabilir, algoritmanın gizliliği gereği bu oranın tüm hakları
+        saklıdır.<a href="main.js"> Kaynak Kodu</a>
+      </p>
+    </div>
   </body>
 </html>

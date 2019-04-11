@@ -38,3 +38,13 @@ body {
   max-width: 600px;
   color: gray;
 }
+
+.social {
+  flex-direction: "row";
+  align-items: "center";
+  justify-content: "center";
+}
+
+.f-share-button {
+  margin-bottom: 6px;
+}
